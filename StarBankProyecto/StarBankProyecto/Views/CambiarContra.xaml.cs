@@ -16,5 +16,11 @@ namespace StarBankProyecto.Views
         {
             InitializeComponent();
         }
+
+        public async void Guardar(Object sender, EventArgs e)
+        {
+            //Agregar metodo para cambiar la contraseña en la base de dato con todas las validaciones y luego regresar al login del inicio
+            await Navigation.PushAsync(new MainPage());
+        }
     }
 }

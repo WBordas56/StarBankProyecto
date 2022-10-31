@@ -8,16 +8,16 @@
             <StackLayout>
 
                 <Label>Código</Label>
-                <Entry x:Name="txtCodigoContra" Margin="0" Keyboard="Text" IsReadOnly="True"/>
+                <Entry x:Name="txtCodigoContra" Margin="0" Keyboard="Text"/>
 
                 <Label>Nueva Cntraseña</Label>
-                <Entry x:Name="txtNuevaContrasena" Margin="0" Keyboard="Text"/>
+                <Entry x:Name="txtNuevaContrasena" Margin="0" Keyboard="Text" IsPassword="True"/>
 
                 <Label>Confirmar Contraseña</Label>
-                <Entry x:Name="txtConfirmarContrasena" Margin="0" Keyboard="Text"/>
-                
-                
-                
+                <Entry x:Name="txtConfirmarContrasena" Margin="0" Keyboard="Text" IsPassword="True"/>
+
+                <Button x:Name="btnGuardar" Text="Guardar Cambios" Background="#74C0FC" Clicked="Guardar"/>
+
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

@@ -10,18 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace StarBankProyecto.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class OlvideContra : ContentPage
+    public partial class Dash : ContentPage
     {
-        public OlvideContra()
+        public Dash()
         {
             InitializeComponent();
         }
-
-        private async void changeContra(Object sender, EventArgs e)
-        {
-            //Agregar metodo para enviar codigo al correo 
-            await Navigation.PushAsync(new Views.CambiarContra());
-        }
-
     }
 }

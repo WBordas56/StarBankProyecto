@@ -6,7 +6,7 @@
 
     <StackLayout>
         <ScrollView>
-            <Frame  Margin="30,250,30,20" Background="#F4F4F6" CornerRadius="8">
+            <Frame  Margin="30,150,30,20" Background="#F4F4F6" CornerRadius="8">
                 <StackLayout>
 
                     <Label HorizontalOptions="Center" FontSize="25">Inicias Sesión</Label>
@@ -15,9 +15,9 @@
                     
 
                     <Label>Clave:</Label>
-                    <Entry x:Name="txtPass" Margin="0,0,0,0" Keyboard="Plain"/>
+                    <Entry x:Name="txtPass" Margin="0,0,0,0" Keyboard="Text" IsPassword="True"/>
 
-                    <Button x:Name="btnInrgesar" Text="Ingresar" Background="#74C0FC" CornerRadius="4" TextColor="WhiteSmoke"/>
+                    <Button x:Name="btnInrgesar" Text="Ingresar" Background="#74C0FC" CornerRadius="4" TextColor="WhiteSmoke" Clicked="Ingresar"/>
 
                     <Button Clicked="forgetPass" Text="Olvide mi contraseña"/>
 

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StarBankProyecto.Views.Dash">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label Text="Bienvenido"/>
+
+                <StackLayout>
+                    <Frame>
+                        <Button x:Name="Cuentas" Text="Administracion de Cuentas"/>
+                    </Frame>
+
+                    <Frame>
+                        <Button x:Name="Transferencias" Text="Tranferencias"/>
+                    </Frame>
+
+                    <Frame>
+                        <Button x:Name="Servicios" Text="Pago de Servicios"/>
+                    </Frame>
+
+                    <Frame>
+                        <Button x:Name="Presupuestario" Text="Control Presupuestario"/>
+                    </Frame>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

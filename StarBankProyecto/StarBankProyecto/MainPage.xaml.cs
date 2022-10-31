@@ -15,7 +15,11 @@ namespace StarBankProyecto
             InitializeComponent();
         }
 
-        private async void forgetPass(object sender, EventArgs e)
+        private async void Ingresar(Object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Views.Dash());
+        }
+        private async void forgetPass(Object sender, EventArgs e)
         {
             await Navigation.PushAsync(new Views.OlvideContra());
 
