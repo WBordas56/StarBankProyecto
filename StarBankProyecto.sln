@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarBankProyecto.Android", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarBankProyecto.iOS", "StarBankProyecto\StarBankProyecto.iOS\StarBankProyecto.iOS.csproj", "{512A5A18-1B79-43CB-B9AC-8A6CE347CCA1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarBankProyecto", "StarBankProyecto\StarBankProyecto\StarBankProyecto.csproj", "{3AE023B4-8C21-4EE7-8F45-35112FCC3662}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StarBankProyecto", "StarBankProyecto\StarBankProyecto\StarBankProyecto.csproj", "{3AE023B4-8C21-4EE7-8F45-35112FCC3662}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

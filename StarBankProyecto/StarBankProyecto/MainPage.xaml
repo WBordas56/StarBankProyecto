@@ -19,7 +19,10 @@
 
                     <Button x:Name="btnInrgesar" Text="Ingresar" Background="#74C0FC" CornerRadius="4" TextColor="WhiteSmoke"/>
 
-                    
+                    <Button Clicked="forgetPass" Text="Olvide mi contraseña"/>
+
+
+
                 </StackLayout>
             </Frame>
             

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StarBankProyecto.Views.CambiarContra">
+    <ContentPage.Content>
+
+        <ScrollView>
+            <StackLayout>
+
+                <Label>Código</Label>
+                <Entry x:Name="txtCodigoContra" Margin="0" Keyboard="Text" IsReadOnly="True"/>
+
+                <Label>Nueva Cntraseña</Label>
+                <Entry x:Name="txtNuevaContrasena" Margin="0" Keyboard="Text"/>
+
+                <Label>Confirmar Contraseña</Label>
+                <Entry x:Name="txtConfirmarContrasena" Margin="0" Keyboard="Text"/>
+                
+                
+                
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

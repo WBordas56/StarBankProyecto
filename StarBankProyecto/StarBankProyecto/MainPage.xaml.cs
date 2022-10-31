@@ -14,5 +14,11 @@ namespace StarBankProyecto
         {
             InitializeComponent();
         }
+
+        private async void forgetPass(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Views.OlvideContra());
+
+        }
     }
 }
