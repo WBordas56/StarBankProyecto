@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="StarBankProyecto.Views.Dash">
+             x:Class="StarBankProyecto.Views.Admin_cuentas">
     <ContentPage.Content>
         <ScrollView>
             <StackLayout>
@@ -9,19 +9,15 @@
 
                 <StackLayout>
                     <Frame>
-                        <Button x:Name="Cuentas" Text="Administracion de Cuentas" Clicked="Cuentas_Clicked"/>
+                        <Button x:Name="saldos" Text="Saldo" Clicked="saldos_Clicked"/>
                     </Frame>
 
                     <Frame>
-                        <Button x:Name="Transferencias" Text="Tranferencias"/>
+                        <Button x:Name="historial" Text="Historial" Clicked="historial_Clicked"/>
                     </Frame>
 
                     <Frame>
-                        <Button x:Name="Servicios" Text="Pago de Servicios"/>
-                    </Frame>
-
-                    <Frame>
-                        <Button x:Name="Presupuestario" Text="Control Presupuestario"/>
+                        <Button x:Name="transc" Text="Transacciones" Clicked="transc_Clicked"/>
                     </Frame>
                 </StackLayout>
             </StackLayout>

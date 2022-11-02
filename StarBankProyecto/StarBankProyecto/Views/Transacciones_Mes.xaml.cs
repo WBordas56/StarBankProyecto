@@ -10,17 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace StarBankProyecto.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Dash : ContentPage
+    public partial class Transacciones_Mes : ContentPage
     {
-        public Dash()
+        public Transacciones_Mes()
         {
             InitializeComponent();
-        }
-
-        private async void Cuentas_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new Views.Admin_cuentas());
-
         }
     }
 }
