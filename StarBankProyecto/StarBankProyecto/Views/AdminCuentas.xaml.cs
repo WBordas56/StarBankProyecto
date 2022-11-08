@@ -25,7 +25,7 @@ namespace StarBankProyecto.Views
 
         private async void Transferencias_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Views.Transacciones());
+            await Navigation.PushAsync(new Views.Transacciones_Mes());
 
         }
 
