@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StarBankProyecto.Views.VerSaldos">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <StackLayout>
+                    <Frame>
+                        <StackLayout>
+                            <Label Text="Cuenta de Ahorro"
+                                   FontSize="20"
+                                   TextColor="Black"
+                                    VerticalOptions="StartAndExpand" 
+                                    HorizontalOptions="StartAndExpand" x:Name="lbresultado" />
+                            <Label Text="201810030114"
+                            VerticalOptions="EndAndExpand" 
+                             TextColor="Black"
+                                FontSize="10"
+                                HorizontalOptions="StartAndExpand" x:Name="lbresultado1" />
+
+                            <Label Text="Saldo disponible"
+                            VerticalOptions="EndAndExpand" 
+                             TextColor="Black"
+                                FontSize="15"
+                                HorizontalOptions="EndAndExpand" x:Name="lbresultado2" />
+                            <Label Text="____________________"
+                            VerticalOptions="EndAndExpand" 
+                             TextColor="Black"
+                                FontSize="15"
+                                HorizontalOptions="EndAndExpand" x:Name="lbresultado3" />
+
+                            <Label Text="HNL 10,000.00 LPS"
+                            VerticalOptions="EndAndExpand" 
+                             TextColor="Black"
+                                FontSize="18"
+                                HorizontalOptions="EndAndExpand"  x:Name="lbresultado4" />
+                        </StackLayout>
+
+                    </Frame>
+
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
