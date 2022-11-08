@@ -4,7 +4,7 @@
              x:Class="StarBankProyecto.Views.Transacciones_Mes">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Transacciones!"
+            <Label Text="Welcome to Xamarin.Forms!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
         </StackLayout>

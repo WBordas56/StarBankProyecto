@@ -9,7 +9,7 @@
 
                 <StackLayout>
                     <Frame>
-                        <Button x:Name="Cuentas" Text="Administracion de Cuentas"/>
+                        <Button x:Name="Cuentas" Text="Administracion de Cuentas" Clicked="PageAdminCuentas"/>
                     </Frame>
 
                     <Frame>

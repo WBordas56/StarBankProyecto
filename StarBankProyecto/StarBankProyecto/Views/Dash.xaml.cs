@@ -16,5 +16,10 @@ namespace StarBankProyecto.Views
         {
             InitializeComponent();
         }
+
+        private async void PageAdminCuentas(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Views.AdminCuentas());
+        }
     }
 }
