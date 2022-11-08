@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StarBankProyecto.Views.VerHisorial">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                
+
+                <StackLayout>
+                    <Frame>
+                        <StackLayout>
+                            <Label Text="Transferencias"
+                                   FontSize="20"
+                                   TextColor="Black"
+                                    VerticalOptions="StartAndExpand" 
+                                    HorizontalOptions="StartAndExpand" x:Name="lbresultado" />
+                            
+                            <Label Text="31/10/2022"
+                            VerticalOptions="EndAndExpand" 
+                             TextColor="Black"
+                                FontSize="15"
+                                HorizontalOptions="StartAndExpand" x:Name="lbresultado1" />
+                            
+                            <Label Text="Dato opcional: Marvin Martinez"
+                            VerticalOptions="EndAndExpand" 
+                             TextColor="gray"
+                                FontSize="13"
+                                HorizontalOptions="StartAndExpand" x:Name="lbresultado2" />
+
+                            <Label Text="Personal->|Pago"
+                            VerticalOptions="EndAndExpand" 
+                             TextColor="Black"
+                                FontSize="15"
+                                HorizontalOptions="Center" x:Name="lbresultado3" />
+
+                            <Label Text="2018130014|200103400"
+                            VerticalOptions="EndAndExpand" 
+                             TextColor="Black"
+                                FontSize="13"
+                                HorizontalOptions="Center" x:Name="lbresultado4" />
+
+                            <Label Text="HNL 5,000.00 LPS"
+                            VerticalOptions="EndAndExpand" 
+                             TextColor="Black"
+                                FontSize="16"
+                                HorizontalOptions="EndAndExpand"  x:Name="lbresultado5" />
+
+                        </StackLayout>
+
+
+                    </Frame>
+
+                  
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
