@@ -1,30 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="StarBankProyecto.MainPage"
-             Background="#0097A9">
-    <ScrollView>
-        <StackLayout Background="#0097A9">
+             x:Class="StarBankProyecto.Views.Login"
+             Background="#fcfcfc">
 
-            <!--<StackLayout Background="#0097a9" Padding="0,80,0,50">
+    <ScrollView>
+        <StackLayout Background="#fcfcfc">
+
+            <StackLayout Background="#0097a9" Padding="0,80,0,50">
                 <Label HorizontalOptions="Center" TextColor="white" FontFamily="Arial" FontSize="35">Star Bank App</Label>
             </StackLayout>
 
-            <Label HorizontalOptions="Center" Margin="0,10,0,10" TextColor="white" FontFamily="Arial" FontSize="35">Star Bank App</Label>-->
+            <!--<Label HorizontalOptions="Center" Margin="0,10,0,10" TextColor="white" FontFamily="Arial" FontSize="35">Star Bank App</Label>-->
+
 
 
             <StackLayout>
-            <Label Text="Star Bank App"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" 
-                   TextColor="White"
-                   FontSize="45"
-                   FontFamily="Arial"
-                   Margin="30,150,30,200"/>
-            </StackLayout>
-
-            <!--
-        <StackLayout>
                 <Frame  Margin="30,0,30,50" Background="#FFF" CornerRadius="2">
                     <StackLayout>
 
@@ -41,17 +32,16 @@
                         <Frame Margin="0,0,0,0" Padding="0,0,0,0" CornerRadius="4">
                             <Entry x:Name="txtPass" FontSize="15" Margin="0,0,0,0" Keyboard="Text" IsPassword="True" Placeholder="Ingresa tu contraseña" PlaceholderColor="#bbb" TextColor="black"/>
                         </Frame>
--->
-            <Button x:Name="btnInrgesar" Text="Ingresar" Background="#ff8300" CornerRadius="100" TextColor="WhiteSmoke" Clicked="Ingresar" Margin="0,0,0,10"/>
-            <!--        
-            <Button Clicked="forgetPass" Text="Olvide mi Contraseña" Background="#FFF" CornerRadius="100" Margin="0,0,0,0" TextColor="#0097a9"/>
+
+                        <Button Clicked="forgetPass" Text="Olvide mi Contraseña" Background="#FFF" CornerRadius="100" Margin="0,0,0,0" TextColor="#0097a9"/>
+                        <Button x:Name="btnInrgesar" Text="Ingresar" Background="#ff8300" CornerRadius="100" TextColor="WhiteSmoke" Clicked="Ingresar" Margin="0,0,0,10"/>
 
 
                         <Label HorizontalTextAlignment="Center" TextColor="Black" FontSize="14">© Derechos Reservados 2022</Label>
                     </StackLayout>
                 </Frame>
             </StackLayout>
--->
+
 
 
 
@@ -59,7 +49,6 @@
 
 
     </ScrollView>
-
 
 
 </ContentPage>
