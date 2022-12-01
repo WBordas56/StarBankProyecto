@@ -12,9 +12,11 @@ namespace StarBankProyecto.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Dash : ContentPage
     {
-        public Dash()
+        public Dash(string Nombre)
         {
             InitializeComponent();
+
+            Bienvenida.Text = "Bienvenido " + Nombre;
         }
 
         private async void PageAdminCuentas(object sender, EventArgs e)

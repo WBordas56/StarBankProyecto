@@ -1,30 +1,75 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="StarBankProyecto.Views.Dash">
+             x:Class="StarBankProyecto.Views.Dash"
+             Title="Star Ban App"
+             Background="lightblue">
     <ContentPage.Content>
         <ScrollView>
             <StackLayout>
-                <Label Text="Bienvenido"/>
+                <Label Grid.Row="1" Text="Bienvenido" x:Name="Bienvenida" FontFamily="arial" FontSize="16" TextColor="Black" Margin="20,15,20,0" VerticalOptions="Center" HorizontalOptions="Center"/>
 
-                <StackLayout>
-                    <Frame>
-                        <Button x:Name="Cuentas" Text="Administracion de Cuentas" Clicked="PageAdminCuentas"/>
+                <Image Source="LogoStarBank.png" VerticalOptions="Center" HeightRequest="80" Margin="0,10,0,0"/>
+                
+                <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Padding="20,0,20,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <Frame Grid.Row="1" Margin="0,5,0,0" HeightRequest="120" WidthRequest="400" BackgroundColor="#fff" BorderColor="Transparent" CornerRadius="5" HorizontalOptions="Center">
+                        <StackLayout>
+                            <Label Grid.Row="2" Grid.Column="1" Text="Cuenta" TextColor="#2196f3" FontAttributes="None" FontSize="16"></Label>
+                            <Label Grid.Row="2" Grid.Column="2" Text="201910050084" TextColor="#000" FontAttributes="None" FontSize="16"></Label>
+                            <Label Grid.Row="3" Grid.Column="1" Text="Saldo" TextColor="#2196f3" FontAttributes="None" FontSize="16"></Label>
+                            <Label Grid.Row="3" Grid.Column="2" Text="L. 100" TextColor="#000" FontAttributes="None" FontSize="16"></Label>
+                        </StackLayout>
                     </Frame>
 
-                    <Frame>
-                        <Button x:Name="Transferencias" Text="Tranferencias"/>
-                    </Frame>
+                </Grid>
 
-                    <Frame>
-                        <Button x:Name="Servicios" Text="Pago de Servicios"/>
-                    </Frame>
+                <Grid Grid.Row="1" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Padding="20,0,20,0" Margin="0,0,0,0" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"></ColumnDefinition>
+                        <ColumnDefinition Width="Auto"></ColumnDefinition>
+                        <ColumnDefinition Width="Auto"></ColumnDefinition>
+                        <ColumnDefinition Width="Auto"></ColumnDefinition>
+                        <ColumnDefinition Width="Auto"></ColumnDefinition>
+                        <ColumnDefinition Width="Auto"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
 
-                    <Frame>
-                        <Button x:Name="Presupuestario" Text="Control Presupuestario"/>
-                    </Frame>
-                </StackLayout>
+                    <Button Text="Administracion de Cuentas" x:Name="btn1" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" BorderWidth="1"  Clicked="PageAdminCuentas"
+                        HeightRequest="200" WidthRequest="150" Margin="0,0,0,5" Grid.Row="0" Grid.Column="0" FontAttributes="Bold"  FontSize="11" CornerRadius="5" BackgroundColor="#a82016" TextColor="#fff"/>
+
+                    <Button Text="Pago de Servicios" x:Name="btn2" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" BorderWidth="1" 
+                        HeightRequest="200" WidthRequest="150" Margin="0,0,0,5" Grid.Row="1" Grid.Column="0" FontAttributes="Bold" FontSize="11" CornerRadius="5" BackgroundColor="#a82016" TextColor="#fff"/>
+
+                    <Button Text="Transferencias Bancarias" x:Name="btn3" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" BorderWidth="1" 
+                        HeightRequest="200" WidthRequest="150" Margin="0,0,0,5" Grid.Row="0" Grid.Column="1" FontAttributes="Bold" FontSize="11" CornerRadius="5" BackgroundColor="#a82016" TextColor="#fff"/>
+
+                    <Button Text="Control Presupuestario" x:Name="btn4" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" BorderWidth="1" 
+                         HeightRequest="200" WidthRequest="150" Margin="0,0,0,5" Grid.Row="1" Grid.Column="1"  FontAttributes="Bold" FontSize="11" CornerRadius="5" BackgroundColor="#a82016" TextColor="#fff"/>
+
+
+                </Grid>
+
+
+                <Label HorizontalTextAlignment="Center" TextColor="#2196f3" FontSize="14" Margin="0,20,0,10">© Derechos Reservados 2022</Label>
+
             </StackLayout>
+
         </ScrollView>
     </ContentPage.Content>
 </ContentPage>

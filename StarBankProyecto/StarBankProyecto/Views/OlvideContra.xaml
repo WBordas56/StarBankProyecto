@@ -1,14 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="StarBankProyecto.Views.OlvideContra">
+             x:Class="StarBankProyecto.Views.OlvideContra"
+             Title="Star Bank App">
     <ContentPage.Content>
         <ScrollView>
             <StackLayout Background="#fafafa">
-                <Frame Padding="0">
-                    <Button ImageSource="" Background="#2196f3" Margin="0,0,340,0"/>
-                </Frame>
-                
                 <Frame Margin="20,30,20,30">
                     <StackLayout>
                         <Label>Correo</Label>

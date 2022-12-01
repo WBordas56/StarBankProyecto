@@ -17,7 +17,7 @@ namespace StarBankProyecto
 
         private async void Ingresar(Object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Views.Dash());
+            await Navigation.PushAsync(new Views.Dash("Don Wilmer"));
         }
         private async void forgetPass(Object sender, EventArgs e)
         {
