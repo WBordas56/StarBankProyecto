@@ -1,25 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="StarBankProyecto.Views.AdminCuentas">
+             x:Class="StarBankProyecto.Views.AdminCuentas"
+             BackgroundColor="#f1f5f9"
+             Title="Star Bank App">
     <ContentPage.Content>
         <ScrollView>
             <StackLayout>
-                <Label Text="Bienvenido"/>
+                <Label Text="Administración de Cuentas" TextColor="#ff8300" FontAttributes="Bold" Margin="5,5,5,0" Padding="15,20,15,0" FontSize="16" FontFamily="arial"/>
 
-                <StackLayout>
-                    <Frame>
-                        <Button x:Name="saldo" Text="Saldo" Clicked="saldo_Clicked"/>
-                    </Frame>
+                <Grid Margin="5,0,5,5" Padding="10,20,10,20" BackgroundColor="Transparent" RowSpacing="5" ColumnSpacing="5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.5*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="55"></RowDefinition>
+                        <RowDefinition Height="55"></RowDefinition>
+                        <RowDefinition Height="55"></RowDefinition>
+                    </Grid.RowDefinitions>
 
-                    <Frame>
-                        <Button x:Name="Transferencias" Text="Tranferencias" Clicked="Transferencias_Clicked"/>
-                    </Frame>
+                    <Button Grid.Row="0" Grid.Column="0" CornerRadius="10" FontAttributes="None" FontFamily="Arial" FontSize="13" BackgroundColor="#fefefe" TextColor="#0097a9" BorderColor="#0097a9" BorderWidth="0.7" x:Name="SaldoCuentas" Text="Saldo de Cuentas" Clicked="saldo_Clicked" Margin="0,0,0,5"/>
+                    <Button Grid.Row="1" Grid.Column="0" CornerRadius="10" FontAttributes="None" FontFamily="Arial" FontSize="13" BackgroundColor="#fefefe" TextColor="#0097a9" BorderColor="#0097a9" BorderWidth="0.7" x:Name="Transferencias" Text="Tranferencias" Clicked="Transferencias_Clicked" Margin="0,0,0,5"/>
+                    <Button Grid.Row="2" Grid.Column="0" CornerRadius="10" FontAttributes="None" FontFamily="Arial" FontSize="13" BackgroundColor="#fefefe" TextColor="#0097a9" BorderColor="#0097a9" BorderWidth="0.7" x:Name="Historial" Text="Historial" Clicked="Historial_Clicked" Margin="0,0,0,5"/>
 
-                    <Frame>
-                        <Button x:Name="Historial" Text="Historial" Clicked="Historial_Clicked"/>
-                    </Frame>
-                </StackLayout>
+                </Grid>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

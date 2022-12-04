@@ -16,7 +16,7 @@ namespace StarBankProyecto.Views
         {
             InitializeComponent();
 
-            Bienvenida.Text = "Bienvenido " + Nombre;
+            Bienvenida.Text = "Bienvenido(a) " + Nombre;
         }
 
         private async void PageAdminCuentas(object sender, EventArgs e)
