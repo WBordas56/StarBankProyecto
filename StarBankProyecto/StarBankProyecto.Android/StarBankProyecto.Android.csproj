@@ -63,6 +63,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <AndroidAsset Include="..\StarBankProyecto\Fuentes\Poppins.ttf">
+      <Link>Assets\Poppins.ttf</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\..\..\..\Desktop\PoppinsBold.ttf">
+      <Link>Assets\PoppinsBold.ttf</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\..\..\..\Desktop\PoppinsRegular.ttf">
+      <Link>Assets\PoppinsRegular.ttf</Link>
+    </AndroidAsset>
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
     <None Include="Properties\AndroidManifest.xml" />
@@ -84,9 +93,6 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Login.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\StarBankProyecto\StarBankProyecto.csproj">
       <Project>{78D09106-E7AF-466B-A33F-39448898DB60}</Project>
       <Name>StarBankProyecto</Name>
@@ -100,6 +106,9 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\LogoStarBank.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Login.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

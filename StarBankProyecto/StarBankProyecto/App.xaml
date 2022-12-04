@@ -3,6 +3,20 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="StarBankProyecto.App">
     <Application.Resources>
-
+        <ResourceDictionary>
+            <OnPlatform x:Key="Poppins" x:TypeArguments="x:String">
+                <On Platform="Android" Value="Poppins.ttf#Poppins"/>
+            </OnPlatform>
+        </ResourceDictionary>
+        <ResourceDictionary>
+            <OnPlatform x:Key="PoppinsRegular" x:TypeArguments="x:String">
+                <On Platform="Android" Value="PoppinsRegular.ttf#PoppinsRegular"/>
+            </OnPlatform>
+        </ResourceDictionary>
+        <ResourceDictionary>
+            <OnPlatform x:Key="PoppinsBold" x:TypeArguments="x:String">
+                <On Platform="Android" Value="PoppinsBold.ttf#PoppinsBold"/>
+            </OnPlatform>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

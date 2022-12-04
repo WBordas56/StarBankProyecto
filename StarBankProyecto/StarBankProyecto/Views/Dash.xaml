@@ -2,12 +2,12 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="StarBankProyecto.Views.Dash"
-             Title="Star Bank App"
+             Title="STARBANK"
              Background="#f3f5f9">
     <ContentPage.Content>
         <ScrollView>
             <StackLayout >
-                <Label Grid.Row="1" Text="b" x:Name="Bienvenida" FontFamily="arial" FontSize="16" TextColor="Black" Margin="20,15,20,0" />
+                <Label Grid.Row="1" Text="b" x:Name="Bienvenida" FontFamily="{StaticResource PoppinsRegular}" FontSize="16" TextColor="Black" Margin="20,15,20,-10" />
 
                 <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Padding="20,0,20,0" >
                     <Grid.ColumnDefinitions>
@@ -21,15 +21,15 @@
 
                     <Frame Margin="0,10,0,0" HeightRequest="120" WidthRequest="400" BackgroundColor="#fefefe" BorderColor="Silver" HasShadow="True" CornerRadius="10" HorizontalOptions="Center">
                         <StackLayout>
-                            <Label Grid.Row="0" Grid.Column="0" Text="Cuentas Principales" TextColor="#0097a9" FontAttributes="Bold" FontSize="16"></Label>
-                            <Label Grid.Row="1" Grid.Column="0" Text="201910050084" TextColor="#000" FontAttributes="None" FontSize="16"></Label>
-                            <Label Grid.Row="2" Grid.Column="0" Text="L. 100" TextColor="#ff8300" FontAttributes="None" FontSize="30"></Label>
+                            <Label Grid.Row="0" Grid.Column="0" Text="Cuentas Principales" TextColor="#0097a9" FontFamily="{StaticResource PoppinsRegular}" FontSize="15"/>
+                            <Label Grid.Row="1" Grid.Column="0" Text="201910050084" TextColor="#0f0f0f" FontFamily="{StaticResource Poppins}" FontSize="16"/>
+                            <Label Grid.Row="2" Grid.Column="0" Text="L. 100" TextColor="#ff8300" FontFamily="{StaticResource Poppins}" FontSize="30"/>
                         </StackLayout>
                     </Frame>
 
                 </Grid>
 
-             <Label Text="Acceso Rápido" TextColor="#0097a9" Padding="25,0,20,0" Margin="0,0,0,10" FontSize="16" FontAttributes="Bold"/>
+                <Label Text="Acceso Rápido" TextColor="#0f0f0f" Padding="25,0,20,0" Margin="0,0,0,0" FontFamily="{StaticResource PoppinsRegular}" FontSize="16" FontAttributes="Bold"/>
 
                 <Grid Grid.Row="1" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Padding="20,0,20,0" Margin="0,0,0,50">
                     <Grid.RowDefinitions>
@@ -51,12 +51,12 @@
                             Margin="0,0,0,5" 
                             Grid.Row="0" 
                             Grid.Column="0" 
-                            FontAttributes="None"  
-                            FontSize="12" 
+                            FontFamily="{StaticResource PoppinsRegular}" 
+                            FontSize="12"
                             CornerRadius="10" 
                             BorderColor="#0097a9" 
                             BackgroundColor="#fefefe" 
-                            TextColor="#ff8300"
+                            TextColor="#0097a9"
                             BorderWidth="1" />
 
                     <Button Text="Pago de Servicios" 
@@ -69,12 +69,12 @@
                             Margin="0,0,0,5" 
                             Grid.Row="1" 
                             Grid.Column="0" 
-                            FontAttributes="None"  
-                            FontSize="12" 
+                            FontFamily="{StaticResource PoppinsRegular}" 
+                            FontSize="12"
                             CornerRadius="10" 
                             BorderColor="#0097a9" 
                             BackgroundColor="#fefefe" 
-                            TextColor="#ff8300"
+                            TextColor="#0097a9"
                             BorderWidth="1"/>
 
                     <Button Text="Transferencias Bancarias" 
@@ -87,12 +87,12 @@
                             Margin="0,0,0,5" 
                             Grid.Row="0" 
                             Grid.Column="1" 
-                            FontAttributes="None" 
-                            FontSize="12" 
+                            FontFamily="{StaticResource PoppinsRegular}" 
+                            FontSize="12"
                             CornerRadius="10" 
                             BorderColor="#0097a9" 
                             BackgroundColor="#fefefe" 
-                            TextColor="#ff8300"/>
+                            TextColor="#0097a9"/>
 
                     <Button Text="Control Presupuestario" 
                             x:Name="btn4" 
@@ -104,12 +104,12 @@
                             Margin="0,0,0,5" 
                             Grid.Row="1" 
                             Grid.Column="1"  
-                            FontAttributes="None" 
-                            FontSize="12" 
+                            FontFamily="{StaticResource PoppinsRegular}" 
+                            FontSize="12"
                             CornerRadius="10" 
                             BorderColor="#0097a9" 
                             BackgroundColor="#fefefe" 
-                            TextColor="#ff8300"/>
+                            TextColor="#0097a9"/>
 
 
                 </Grid>
