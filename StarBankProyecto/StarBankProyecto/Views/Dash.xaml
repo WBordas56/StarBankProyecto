@@ -100,6 +100,7 @@
                             VerticalOptions="CenterAndExpand" 
                             HorizontalOptions="Center" 
                             BorderWidth="1" 
+                            Clicked="PagePresupuesto"
                             HeightRequest="160" 
                             WidthRequest="150" 
                             Margin="0,0,0,5" 
