@@ -23,7 +23,7 @@
 
 
 
-                        <Button x:Name="btnInrgesar" Text="Enviar Correo" Background="#ff8300" CornerRadius="50" TextColor="WhiteSmoke" Margin="0,30,0,20" Clicked="changeContra"/>
+                        <Button x:Name="btnEnviarCorreo" Text="Enviar Correo" Background="#ff8300" CornerRadius="50" TextColor="WhiteSmoke" Margin="0,30,0,20" Clicked="changeContra" FontFamily="{StaticResource PoppinsBold}"/>
 
 
                     </StackLayout>

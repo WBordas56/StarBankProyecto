@@ -1,29 +1,58 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="StarBankProyecto.Views.VerSaldos">
+             x:Class="StarBankProyecto.Views.VerSaldos"
+             BackgroundColor="#f3f5f9">
     <ContentPage.Content>
         <ScrollView>
             <StackLayout>
+
+                <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Padding="20,20,20,20" BackgroundColor="WhiteSmoke">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.5*"/>
+                        <ColumnDefinition Width="0.5*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <Label Text="Cuenta de Ahorro"
+                           FontSize="20"
+                           FontFamily="{StaticResource PoppinsBold}"
+                           TextColor="#0f0f0f"
+                           VerticalOptions="CenterAndExpand" 
+                           HorizontalOptions="CenterAndExpand" 
+                           Grid.ColumnSpan="2"
+                           Grid.Row="0"/>
+                    <Label Text="201810030114"
+                           x:Name="Cuenta"
+                           FontFamily="{StaticResource PoppinsRegular}"
+                           TextColor="#0f0f0f"
+                           FontSize="16"
+                           VerticalOptions="CenterAndExpand" 
+                           HorizontalOptions="CenterAndExpand" 
+                           Grid.ColumnSpan="2"
+                           Grid.Row="1"/>
+                    <Label Text="Saldo disponible"
+                           FontFamily="{StaticResource PoppinsRegular}"
+                           TextColor="Black"
+                           FontSize="15"
+                           HorizontalOptions="StartAndExpand"
+                           VerticalOptions="StartAndExpand" 
+                           Grid.Column="0"
+                           Grid.Row="2"/>
+
+                </Grid>
+
                 <StackLayout>
                     <Frame>
                         <StackLayout>
-                            <Label Text="Cuenta de Ahorro"
-                                   FontSize="20"
-                                   TextColor="Black"
-                                    VerticalOptions="StartAndExpand" 
-                                    HorizontalOptions="StartAndExpand" x:Name="lbresultado" />
-                            <Label Text="201810030114"
-                            VerticalOptions="EndAndExpand" 
-                             TextColor="Black"
-                                FontSize="10"
-                                HorizontalOptions="StartAndExpand" x:Name="lbresultado1" />
-
-                            <Label Text="Saldo disponible"
-                            VerticalOptions="EndAndExpand" 
-                             TextColor="Black"
-                                FontSize="15"
-                                HorizontalOptions="EndAndExpand" x:Name="lbresultado2" />
+                            
+                            
+                            
                             <Label Text="____________________"
                             VerticalOptions="EndAndExpand" 
                              TextColor="Black"

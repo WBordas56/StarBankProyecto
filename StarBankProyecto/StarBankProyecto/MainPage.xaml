@@ -29,7 +29,7 @@
                         <Button Clicked="forgetPass" Text="Olvide mi Contraseña" Background="Transparent" FontFamily="{StaticResource Poppins}" FontSize="13" CornerRadius="100" Margin="0,0,0,0" TextColor="#0097a9"/>
 
 
-                        <Button x:Name="btnInrgesar" Text="Ingresar" FontFamily="{StaticResource PoppinsRegular}" Background="#ff8300" CornerRadius="500" TextColor="White" Clicked="Ingresar" Margin="0,0,0,10"/>
+                        <Button x:Name="btnInrgesar" Text="Ingresar" FontFamily="{StaticResource PoppinsBold}" Background="#ff8300" CornerRadius="500" TextColor="White" Clicked="Ingresar" Margin="0,0,0,10"/>
                     </StackLayout>
                 </Frame>
             </StackLayout>
