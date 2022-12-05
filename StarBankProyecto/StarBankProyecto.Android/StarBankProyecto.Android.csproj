@@ -66,10 +66,10 @@
     <AndroidAsset Include="..\StarBankProyecto\Fuentes\Poppins.ttf">
       <Link>Assets\Poppins.ttf</Link>
     </AndroidAsset>
-    <AndroidAsset Include="..\..\..\..\Desktop\PoppinsBold.ttf">
+    <AndroidAsset Include="..\StarBankProyecto\Fuentes\PoppinsBold.ttf">
       <Link>Assets\PoppinsBold.ttf</Link>
     </AndroidAsset>
-    <AndroidAsset Include="..\..\..\..\Desktop\PoppinsRegular.ttf">
+    <AndroidAsset Include="..\StarBankProyecto\Fuentes\PoppinsRegular.ttf">
       <Link>Assets\PoppinsRegular.ttf</Link>
     </AndroidAsset>
     <None Include="Resources\AboutResources.txt" />
