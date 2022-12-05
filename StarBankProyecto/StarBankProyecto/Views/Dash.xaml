@@ -31,7 +31,7 @@
 
                 <Label Text="Acceso Rápido" TextColor="#0f0f0f" Padding="25,0,20,0" Margin="0,0,0,0" FontFamily="{StaticResource PoppinsRegular}" FontSize="16" FontAttributes="Bold"/>
 
-                <Grid Grid.Row="1" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Padding="20,0,20,0" Margin="0,0,0,50">
+                <Grid Grid.Row="1" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Padding="20,0,20,0" Margin="0,0,0,10">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="0.5*"></RowDefinition>
                         <RowDefinition Height="0.5*"></RowDefinition>
@@ -63,7 +63,7 @@
                             x:Name="btn2" 
                             VerticalOptions="CenterAndExpand" 
                             HorizontalOptions="Center" 
-                            Clicked="PageAdminCuentas"
+                            Clicked="PageServicios"
                             HeightRequest="160" 
                             WidthRequest="150" 
                             Margin="0,0,0,5" 
@@ -81,6 +81,7 @@
                             x:Name="btn3" 
                             VerticalOptions="CenterAndExpand" 
                             HorizontalOptions="Center" 
+                            Clicked="PageTransfer"
                             BorderWidth="1" 
                             HeightRequest="160" 
                             WidthRequest="150" 
@@ -113,6 +114,75 @@
 
 
                 </Grid>
+
+                <Label Text="Otras Opciones" TextColor="#0f0f0f" Padding="25,0,20,0" Margin="0,0,0,0" FontFamily="{StaticResource PoppinsRegular}" FontSize="16" FontAttributes="Bold"/>
+
+                <Grid Grid.Row="1" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Padding="20,0,20,0" Margin="0,0,0,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="0.5*"></RowDefinition>
+                        <RowDefinition Height="0.3*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Button Text="Perfil" 
+                            x:Name="btn5" 
+                            VerticalOptions="CenterAndExpand" 
+                            HorizontalOptions="Center" 
+                            Clicked="PageAdminCuentas"
+                            HeightRequest="160" 
+                            WidthRequest="150" 
+                            Margin="0,0,0,0" 
+                            Grid.Row="0" 
+                            Grid.Column="0" 
+                            FontFamily="{StaticResource PoppinsRegular}" 
+                            FontSize="12"
+                            CornerRadius="10" 
+                            BorderColor="#0097a9" 
+                            BackgroundColor="#fefefe" 
+                            TextColor="#0097a9"
+                            BorderWidth="1" />
+
+                    <Button Text="Desarrolladores" 
+                            x:Name="btn6" 
+                            VerticalOptions="CenterAndExpand" 
+                            HorizontalOptions="Center" 
+                            Clicked="PageServicios"
+                            HeightRequest="160" 
+                            WidthRequest="150" 
+                            Margin="0,0,0,0" 
+                            Grid.Row="0" 
+                            Grid.Column="1" 
+                            FontFamily="{StaticResource PoppinsRegular}" 
+                            FontSize="12"
+                            CornerRadius="10" 
+                            BorderColor="#0097a9" 
+                            BackgroundColor="#fefefe" 
+                            TextColor="#0097a9"
+                            BorderWidth="1"/>
+
+                    <Button Text="Cerrar Sesión" 
+                            x:Name="btn7" 
+                            VerticalOptions="CenterAndExpand" 
+                            HorizontalOptions="StartAndExpand" 
+                            Clicked="PageServicios"
+                            BorderWidth="1" 
+                            HeightRequest="50" 
+                            WidthRequest="1000" 
+                            Margin="0,0,0,5" 
+                            Grid.Row="1" 
+                            Grid.ColumnSpan="2" 
+                            FontFamily="{StaticResource PoppinsBold}" 
+                            FontSize="12"
+                            CornerRadius="100" 
+                            BorderColor="Crimson" 
+                            BackgroundColor="#fefefe" 
+                            TextColor="Crimson"/>
+
+                </Grid>
+
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

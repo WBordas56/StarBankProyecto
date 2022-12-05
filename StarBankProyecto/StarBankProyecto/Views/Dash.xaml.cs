@@ -23,5 +23,16 @@ namespace StarBankProyecto.Views
         {
             await Navigation.PushAsync(new Views.AdminCuentas());
         }
+
+        private async void PageServicios(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Views.Servicios());
+        }
+
+        private async void PageTransfer(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Views.Transferencias());
+        }
+
     }
 }
