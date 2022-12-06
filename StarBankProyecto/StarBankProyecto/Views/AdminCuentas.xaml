@@ -20,8 +20,8 @@
                     </Grid.RowDefinitions>
 
                     <Button Grid.Row="0" Grid.Column="0" CornerRadius="100" FontFamily="{StaticResource PoppinsRegular}" FontSize="13" BackgroundColor="#fefefe" TextColor="#0097a9" BorderColor="#0097a9" BorderWidth="1" x:Name="Saldo" Text="Ver Saldo Corriente" Clicked="saldo_Clicked" Margin="0,0,0,5"/>
-                    <Button Grid.Row="1" Grid.Column="0" CornerRadius="100" FontFamily="{StaticResource PoppinsRegular}" FontSize="13" BackgroundColor="#fefefe" TextColor="#0097a9" BorderColor="#0097a9" BorderWidth="1" x:Name="Historial" Text="Historial de Transacciones" Clicked="Transferencias_Clicked" Margin="0,0,0,5"/>
-                    <Button Grid.Row="2" Grid.Column="0" CornerRadius="100" FontFamily="{StaticResource PoppinsRegular}" FontSize="13" BackgroundColor="#fefefe" TextColor="#0097a9" BorderColor="#0097a9" BorderWidth="1" x:Name="Transacciones" Text="Transacciones del mes" Clicked="Historial_Clicked" Margin="0,0,0,5"/>
+                    <Button Grid.Row="1" Grid.Column="0" CornerRadius="100" FontFamily="{StaticResource PoppinsRegular}" FontSize="13" BackgroundColor="#fefefe" TextColor="#0097a9" BorderColor="#0097a9" BorderWidth="1" x:Name="Historial" Text="Historial de Transacciones" Clicked="Historial_Clicked" Margin="0,0,0,5"/>
+                    <Button Grid.Row="2" Grid.Column="0" CornerRadius="100" FontFamily="{StaticResource PoppinsRegular}" FontSize="13" BackgroundColor="#fefefe" TextColor="#0097a9" BorderColor="#0097a9" BorderWidth="1" x:Name="Transacciones" Text="Transacciones del mes" Clicked="Transferencias_Clicked" Margin="0,0,0,5"/>
 
                 </Grid>
             </StackLayout>
