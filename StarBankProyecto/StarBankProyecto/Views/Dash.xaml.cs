@@ -38,9 +38,9 @@ namespace StarBankProyecto.Views
         {
             await Navigation.PushAsync(new Views.ControlPresupuestario());
         }
-        private async void PagePeril(object sender, EventArgs e)
+        private async void PagePefil(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Views.Servicios());
+            await Navigation.PushAsync(new Views.PerfilUsuario());
         }
 
         private async void PageDesarrolladores(object sender, EventArgs e)

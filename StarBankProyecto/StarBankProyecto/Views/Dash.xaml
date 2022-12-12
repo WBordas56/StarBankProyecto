@@ -2,12 +2,20 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="StarBankProyecto.Views.Dash"
+             NavigationPage.HasNavigationBar="False"
              Title="STARBANK"
              Background="#f3f5f9">
+    <StackLayout>
+        
     
-        <ScrollView>
+    <StackLayout Background="#0097a9" WidthRequest="0" HeightRequest="60">
+        <Label Text="Star Bank App" FontFamily="{StaticResource PoppinsBold}" FontSize="25" TextColor="#FEFEFE" HorizontalOptions="Center" VerticalOptions="Center" Margin="0,10,0,0"/>
+    </StackLayout>
+    
+    <ScrollView>
             <StackLayout >
-                <Label Grid.Row="1" x:Name="Bienvenida" FontFamily="{StaticResource PoppinsRegular}" FontSize="16" TextColor="Black" Margin="20,15,20,0" />
+
+                <Label x:Name="Bienvenida" FontFamily="{StaticResource PoppinsRegular}" Text="Bienvenido" FontSize="16" TextColor="Black" Margin="20,15,20,0" />
 
                 <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Padding="0,0,0,0" Margin="20,0,20,0" >
                     <Grid.ColumnDefinitions>
@@ -19,7 +27,7 @@
                         <RowDefinition Height="Auto"></RowDefinition>
                     </Grid.RowDefinitions>
 
-                    <Frame Margin="0,10,0,0" HeightRequest="120" WidthRequest="1000" BackgroundColor="#fefefe" HasShadow="True" CornerRadius="10" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                    <Frame Margin="0,10,0,0" HeightRequest="100" WidthRequest="1000" BackgroundColor="#fefefe" HasShadow="True" CornerRadius="5" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
                         <StackLayout>
                             <Label Grid.Row="0" Grid.Column="0" Text="Cuentas Principales" TextColor="#0097a9" FontFamily="{StaticResource PoppinsRegular}" FontSize="15"/>
                             <Label Grid.Row="1" Grid.Column="0" Text="201910050084" TextColor="#0f0f0f" FontFamily="{StaticResource PoppinsRegular}" FontSize="15"/>
@@ -46,73 +54,72 @@
                             VerticalOptions="CenterAndExpand" 
                             HorizontalOptions="Center" 
                             Clicked="PageAdminCuentas"
+                            ImageSource="cuentas"
                             HeightRequest="160" 
-                            WidthRequest="150" 
-                            Margin="0,0,0,5" 
+                            WidthRequest="2000" 
+                            Margin="2,2,2,2" 
                             Grid.Row="0" 
                             Grid.Column="0" 
+                            TextTransform="None"
                             FontFamily="{StaticResource PoppinsRegular}" 
                             FontSize="12"
-                            CornerRadius="10" 
-                            BorderColor="#0097a9" 
+                            CornerRadius="5"
                             BackgroundColor="#fefefe" 
-                            TextColor="#0097a9"
-                            BorderWidth="1" />
+                            TextColor="#0F0F0F"/>
 
                     <Button Text="Pago de Servicios" 
+                            TextTransform="None"
+                            FontFamily="{StaticResource PoppinsRegular}" 
+                            FontSize="12"
                             x:Name="btn2" 
-                            VerticalOptions="CenterAndExpand" 
+                            CornerRadius="5" 
+                            ImageSource="servicios"
+                            Grid.Row="1"
+                            Grid.Column="0"
+                            VerticalOptions="Center" 
                             HorizontalOptions="Center" 
                             Clicked="PageServicios"
                             HeightRequest="160" 
-                            WidthRequest="150" 
-                            Margin="0,0,0,5" 
-                            Grid.Row="1" 
-                            Grid.Column="0" 
-                            FontFamily="{StaticResource PoppinsRegular}" 
-                            FontSize="12"
-                            CornerRadius="10" 
-                            BorderColor="#0097a9" 
-                            BackgroundColor="#fefefe" 
-                            TextColor="#0097a9"
-                            BorderWidth="1"/>
-
+                            WidthRequest="2000" 
+                            Margin="2,2,2,2" 
+                            BackgroundColor="#fefefe"/>
+          
                     <Button Text="Transferencias Bancarias" 
                             x:Name="btn3" 
                             VerticalOptions="CenterAndExpand" 
                             HorizontalOptions="Center" 
                             Clicked="PageTransfer"
-                            BorderWidth="1" 
+                            ImageSource="transferencias"
+                            Margin="2,2,2,2" 
                             HeightRequest="160" 
-                            WidthRequest="150" 
-                            Margin="0,0,0,5" 
+                            WidthRequest="2000" 
                             Grid.Row="0" 
-                            Grid.Column="1" 
+                            Grid.Column="1"
+                            TextTransform="None"
                             FontFamily="{StaticResource PoppinsRegular}" 
                             FontSize="12"
-                            CornerRadius="10" 
-                            BorderColor="#0097a9" 
+                            CornerRadius="5"
                             BackgroundColor="#fefefe" 
-                            TextColor="#0097a9"/>
+                            TextColor="#0F0F0F"/>
 
                     <Button Text="Control Presupuestario" 
                             x:Name="btn4" 
                             VerticalOptions="CenterAndExpand" 
                             HorizontalOptions="Center" 
-                            BorderWidth="0.1" 
+                            BorderWidth="1" 
                             Clicked="PagePresupuesto"
                             HeightRequest="160" 
-                            WidthRequest="150" 
-                            Margin="0,0,0,5" 
+                            WidthRequest="2000" 
+                            Margin="5,2,2,2" 
                             Grid.Row="1" 
                             Grid.Column="1"  
+                            TextTransform="None"
                             FontFamily="{StaticResource PoppinsRegular}" 
                             FontSize="12"
-                            CornerRadius="10" 
-                            BorderColor="#0097a9" 
+                            CornerRadius="5" 
+                            ImageSource="Admin"
                             BackgroundColor="#fefefe" 
-                            TextColor="#0097a9"/>
-
+                            TextColor="#0F0F0F"/>
 
                 </Grid>
 
@@ -132,18 +139,19 @@
                             x:Name="btn5" 
                             VerticalOptions="CenterAndExpand" 
                             HorizontalOptions="Center" 
-                            Clicked="PageAdminCuentas"
-                            HeightRequest="160" 
-                            WidthRequest="150" 
-                            Margin="0,0,0,0" 
+                            Clicked="PagePefil"
+                            ImageSource="user"
+                            HeightRequest="150" 
+                            WidthRequest="200" 
+                            Margin="2,2,2,2" 
                             Grid.Row="0" 
-                            Grid.Column="0" 
+                            Grid.Column="0"
+                            TextTransform="None"
                             FontFamily="{StaticResource PoppinsRegular}" 
                             FontSize="12"
-                            CornerRadius="10" 
-                            BorderColor="#0097a9" 
+                            CornerRadius="5" 
                             BackgroundColor="#fefefe" 
-                            TextColor="#0097a9"
+                            TextColor="#0f0f0f"
                             BorderWidth="1" />
 
                     <Button Text="Desarrolladores" 
@@ -151,17 +159,18 @@
                             VerticalOptions="CenterAndExpand" 
                             HorizontalOptions="Center" 
                             Clicked="PageServicios"
-                            HeightRequest="160" 
-                            WidthRequest="150" 
-                            Margin="0,0,0,0" 
+                            ImageSource="code"
+                            HeightRequest="150" 
+                            WidthRequest="200" 
+                            Margin="2,2,2,2" 
                             Grid.Row="0" 
                             Grid.Column="1" 
+                            TextTransform="None"
                             FontFamily="{StaticResource PoppinsRegular}" 
                             FontSize="12"
-                            CornerRadius="10" 
-                            BorderColor="#0097a9" 
+                            CornerRadius="5"
                             BackgroundColor="#fefefe" 
-                            TextColor="#0097a9"
+                            TextColor="#0f0f0f"
                             BorderWidth="1"/>
 
                     <Button Text="Cerrar Sesión" 
@@ -175,8 +184,9 @@
                             Margin="0,0,0,5" 
                             Grid.Row="1" 
                             Grid.ColumnSpan="2" 
+                            TextTransform="None"
                             FontFamily="{StaticResource PoppinsBold}" 
-                            FontSize="14"
+                            FontSize="15"
                             CornerRadius="100" 
                             BorderColor="Crimson" 
                             BackgroundColor="Crimson" 
@@ -186,5 +196,5 @@
 
             </StackLayout>
         </ScrollView>
-    
+    </StackLayout>
 </ContentPage>

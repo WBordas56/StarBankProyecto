@@ -17,7 +17,17 @@ namespace StarBankProyecto
 
         private async void Ingresar(Object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Views.Dash("Wilmer"));
+            if (txtUser.Text == null || txtUser.Text == "") 
+            { 
+                await DisplayAlert("Aviso", "Ingrese un usuario", "OK"); 
+            }
+            else
+            {
+                await Navigation.PushAsync(new Views.Dash("CEO-G5"));
+            }
+
+
+            
         }
         private async void forgetPass(Object sender, EventArgs e)
         {

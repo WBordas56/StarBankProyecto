@@ -2,12 +2,16 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="StarBankProyecto.Views.AdminCuentas"
-             BackgroundColor="#f3f5f9"
-             Title="STARBANK">
-    <ContentPage.Content>
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="#f3f5f9">
+    <StackLayout>
+        <StackLayout Background="#0097a9" WidthRequest="0" HeightRequest="60">
+            <Label Text="Star Bank App" FontFamily="{StaticResource PoppinsBold}" FontSize="25" TextColor="#FEFEFE" HorizontalOptions="Center" VerticalOptions="Center" Margin="0,10,0,0"/>
+        </StackLayout>
+        
         <ScrollView>
             <StackLayout>
-                <Label Text="Administración de Cuentas" TextColor="#FF8300" FontFamily="{StaticResource PoppinsRegular}" Margin="5,5,5,0" Padding="15,20,15,10" FontSize="16"/>
+                <Label Text="Administración de Cuentas" TextColor="#0F0F0F" FontFamily="{StaticResource PoppinsRegular}" Margin="5,5,5,0" Padding="15,20,15,10" FontSize="16"/>
 
                 <Grid Margin="5,0,5,5" Padding="10,0,10,20" BackgroundColor="Transparent" RowSpacing="5" ColumnSpacing="5">
                     <Grid.ColumnDefinitions>
@@ -19,12 +23,12 @@
                         <RowDefinition Height="55"></RowDefinition>
                     </Grid.RowDefinitions>
 
-                    <Button Grid.Row="0" Grid.Column="0" CornerRadius="100" FontFamily="{StaticResource PoppinsRegular}" FontSize="13" BackgroundColor="#fefefe" TextColor="#0097a9" BorderColor="#0097a9" BorderWidth="1" x:Name="Saldo" Text="Ver Saldo Corriente" Clicked="saldo_Clicked" Margin="0,0,0,5"/>
-                    <Button Grid.Row="1" Grid.Column="0" CornerRadius="100" FontFamily="{StaticResource PoppinsRegular}" FontSize="13" BackgroundColor="#fefefe" TextColor="#0097a9" BorderColor="#0097a9" BorderWidth="1" x:Name="Historial" Text="Historial de Transacciones" Clicked="Historial_Clicked" Margin="0,0,0,5"/>
-                    <Button Grid.Row="2" Grid.Column="0" CornerRadius="100" FontFamily="{StaticResource PoppinsRegular}" FontSize="13" BackgroundColor="#fefefe" TextColor="#0097a9" BorderColor="#0097a9" BorderWidth="1" x:Name="Transacciones" Text="Transacciones del mes" Clicked="Transferencias_Clicked" Margin="0,0,0,5"/>
+                    <Button Grid.Row="0" Grid.Column="0" CornerRadius="100" FontFamily="{StaticResource PoppinsRegular}" FontSize="13" BackgroundColor="#fefefe" TextColor="#0097a9" BorderColor="#0097a9" BorderWidth="1" x:Name="Saldo" Text="Ver Saldo Corriente" Clicked="saldo_Clicked" Margin="0,0,0,5" TextTransform="None"/>
+                    <Button Grid.Row="1" Grid.Column="0" CornerRadius="100" FontFamily="{StaticResource PoppinsRegular}" FontSize="13" BackgroundColor="#fefefe" TextColor="#0097a9" BorderColor="#0097a9" BorderWidth="1" x:Name="Historial" Text="Historial de Transacciones" Clicked="Historial_Clicked" Margin="0,0,0,5" TextTransform="None"/>
+                    <Button Grid.Row="2" Grid.Column="0" CornerRadius="100" FontFamily="{StaticResource PoppinsRegular}" FontSize="13" BackgroundColor="#fefefe" TextColor="#0097a9" BorderColor="#0097a9" BorderWidth="1" x:Name="Transacciones" Text="Transacciones del mes" Clicked="Transferencias_Clicked" Margin="0,0,0,5" TextTransform="None"/>
 
                 </Grid>
             </StackLayout>
         </ScrollView>
-    </ContentPage.Content>
+    </StackLayout>
 </ContentPage>

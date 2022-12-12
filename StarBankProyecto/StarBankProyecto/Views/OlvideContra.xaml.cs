@@ -25,7 +25,7 @@ public partial class OlvideContra : ContentPage
         //await Navigation.PushAsync(new Views.CambiarContra());
         if (txtEmail.Text == null || txtEmail.Text == "")
         {
-            await DisplayAlert("Aviso", "Ingrese el correo electrónico ligado a su cunta para poder recuperarla", "OK"); return;
+            await DisplayAlert("Aviso", "Ingrese el correo electrónico ligado a su cunta para poder recuperarla la contraseña", "OK"); return;
         }
         else if (!validateEmail(txtEmail.Text))
         {
@@ -116,23 +116,6 @@ public partial class OlvideContra : ContentPage
             return false;
         }
         }
-
-        private void txtemail_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            btnEnviarCorreo.IsEnabled = true;
-            if (txtEmail.Text == "")
-            {
-                btnEnviarCorreo.IsEnabled = false;
-            }
-
-        }
-
-        private void makeToast(string mensaje, double duracion)
-        {
-         //   var ToastConfig = new ToastConfig(mensaje);
-         //   ToastConfig.SetDuration(TimeSpan.FromSeconds(duracion));
-         //   ToastConfig.SetPosition(ToastPosition.Bottom);
-         //   UserDialogs.Instance.Toast(ToastConfig);
-        }
+        
     }
 }

@@ -10,8 +10,8 @@ namespace ProyectoFinal.Api
 {
     public class TransferenciaApi
     {
-        //private static readonly string URL_SITIOS = "https://pm2examen2.000webhostapp.com/apiproyecto/";
-        private static readonly string URL_SITIOS = "https://transportweb2.online/apimovil/";
+        private static readonly string URL_SITIOS = "https://pm2examen2.000webhostapp.com/apiproyecto/";
+        
         private static HttpClient client = new HttpClient();
 
         public async static Task<bool> CreateTransferencia(Transferencia transferencia)
