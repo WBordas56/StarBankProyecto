@@ -27,11 +27,11 @@
                         <RowDefinition Height="Auto"></RowDefinition>
                     </Grid.RowDefinitions>
 
-                    <Frame Margin="0,10,0,0" HeightRequest="100" WidthRequest="1000" BackgroundColor="#fefefe" HasShadow="True" CornerRadius="5" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                    <Frame Margin="0,10,0,0" HeightRequest="120" WidthRequest="1000" BackgroundColor="#fefefe" HasShadow="True" CornerRadius="5" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
                         <StackLayout>
                             <Label Grid.Row="0" Grid.Column="0" Text="Cuentas Principales" TextColor="#0097a9" FontFamily="{StaticResource PoppinsRegular}" FontSize="15"/>
                             <Label Grid.Row="1" Grid.Column="0" Text="201910050084" TextColor="#0f0f0f" FontFamily="{StaticResource PoppinsRegular}" FontSize="15"/>
-                            <Label Grid.Row="2" Grid.Column="0" Text="L. 100" TextColor="#ff8300" FontFamily="{StaticResource PoppinsRegular}" FontSize="35"/>
+                            <Label Grid.Row="2" Grid.Column="0" Text="L. 1000" TextColor="#ff8300" FontFamily="{StaticResource PoppinsRegular}" FontSize="35"/>
                         </StackLayout>
                     </Frame>
 
@@ -41,6 +41,11 @@
 
                 <Grid Grid.Row="1" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Padding="20,0,20,0" Margin="0,0,0,10">
                     <Grid.RowDefinitions>
+                        <RowDefinition Height="0.5*"></RowDefinition>
+                        <RowDefinition Height="0.5*"></RowDefinition>
+                        <RowDefinition Height="0.5*"></RowDefinition>
+                        <RowDefinition Height="0.5*"></RowDefinition>
+                        <RowDefinition Height="0.5*"></RowDefinition>
                         <RowDefinition Height="0.5*"></RowDefinition>
                         <RowDefinition Height="0.5*"></RowDefinition>
                     </Grid.RowDefinitions>
@@ -59,10 +64,10 @@
                             WidthRequest="2000" 
                             Margin="2,2,2,2" 
                             Grid.Row="0" 
-                            Grid.Column="0" 
+                            Grid.ColumnSpan="2" 
                             TextTransform="None"
                             FontFamily="{StaticResource PoppinsRegular}" 
-                            FontSize="12"
+                            FontSize="14"
                             CornerRadius="5"
                             BackgroundColor="#fefefe" 
                             TextColor="#0F0F0F"/>
@@ -70,12 +75,12 @@
                     <Button Text="Pago de Servicios" 
                             TextTransform="None"
                             FontFamily="{StaticResource PoppinsRegular}" 
-                            FontSize="12"
+                            FontSize="14"
                             x:Name="btn2" 
                             CornerRadius="5" 
                             ImageSource="servicios"
                             Grid.Row="1"
-                            Grid.Column="0"
+                            Grid.ColumnSpan="2" 
                             VerticalOptions="Center" 
                             HorizontalOptions="Center" 
                             Clicked="PageServicios"
@@ -93,11 +98,11 @@
                             Margin="2,2,2,2" 
                             HeightRequest="160" 
                             WidthRequest="2000" 
-                            Grid.Row="0" 
-                            Grid.Column="1"
+                            Grid.Row="2" 
+                            Grid.ColumnSpan="2" 
                             TextTransform="None"
                             FontFamily="{StaticResource PoppinsRegular}" 
-                            FontSize="12"
+                            FontSize="14"
                             CornerRadius="5"
                             BackgroundColor="#fefefe" 
                             TextColor="#0F0F0F"/>
@@ -111,44 +116,30 @@
                             HeightRequest="160" 
                             WidthRequest="2000" 
                             Margin="5,2,2,2" 
-                            Grid.Row="1" 
-                            Grid.Column="1"  
+                            Grid.Row="3" 
+                            Grid.ColumnSpan="2" 
                             TextTransform="None"
                             FontFamily="{StaticResource PoppinsRegular}" 
-                            FontSize="12"
+                            FontSize="14"
                             CornerRadius="5" 
                             ImageSource="Admin"
                             BackgroundColor="#fefefe" 
                             TextColor="#0F0F0F"/>
-
-                </Grid>
-
-                <Label Text="Otras Opciones" TextColor="#0f0f0f" Padding="25,0,20,0" Margin="0,0,0,0" FontFamily="{StaticResource PoppinsRegular}" FontSize="16" FontAttributes="Bold"/>
-
-                <Grid Grid.Row="1" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Padding="20,0,20,0" Margin="0,0,0,0">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="0.5*"></RowDefinition>
-                        <RowDefinition Height="0.3*"></RowDefinition>
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"></ColumnDefinition>
-                        <ColumnDefinition Width="*"></ColumnDefinition>
-                    </Grid.ColumnDefinitions>
-
+                    
                     <Button Text="Perfil" 
                             x:Name="btn5" 
                             VerticalOptions="CenterAndExpand" 
                             HorizontalOptions="Center" 
                             Clicked="PagePefil"
                             ImageSource="user"
-                            HeightRequest="150" 
-                            WidthRequest="200" 
+                            HeightRequest="160" 
+                            WidthRequest="2000" 
                             Margin="2,2,2,2" 
-                            Grid.Row="0" 
-                            Grid.Column="0"
+                            Grid.Row="4" 
+                            Grid.ColumnSpan="2" 
                             TextTransform="None"
                             FontFamily="{StaticResource PoppinsRegular}" 
-                            FontSize="12"
+                            FontSize="14"
                             CornerRadius="5" 
                             BackgroundColor="#fefefe" 
                             TextColor="#0f0f0f"
@@ -158,16 +149,16 @@
                             x:Name="btn6" 
                             VerticalOptions="CenterAndExpand" 
                             HorizontalOptions="Center" 
-                            Clicked="PageServicios"
+                            Clicked="PageDesarrolladores"
                             ImageSource="code"
-                            HeightRequest="150" 
-                            WidthRequest="200" 
+                            HeightRequest="160" 
+                            WidthRequest="2000" 
                             Margin="2,2,2,2" 
-                            Grid.Row="0" 
-                            Grid.Column="1" 
+                            Grid.Row="5" 
+                            Grid.ColumnSpan="2" 
                             TextTransform="None"
                             FontFamily="{StaticResource PoppinsRegular}" 
-                            FontSize="12"
+                            FontSize="14"
                             CornerRadius="5"
                             BackgroundColor="#fefefe" 
                             TextColor="#0f0f0f"
@@ -177,22 +168,27 @@
                             x:Name="btn7" 
                             VerticalOptions="CenterAndExpand" 
                             HorizontalOptions="StartAndExpand" 
-                            Clicked="PageServicios"
+                            Clicked="PageSalir"
                             BorderWidth="1" 
                             HeightRequest="50" 
                             WidthRequest="1000" 
-                            Margin="0,0,0,5" 
-                            Grid.Row="1" 
+                            Margin="0,0,0,0" 
+                            Grid.Row="6" 
                             Grid.ColumnSpan="2" 
                             TextTransform="None"
                             FontFamily="{StaticResource PoppinsBold}" 
-                            FontSize="15"
+                            FontSize="16"
                             CornerRadius="100" 
                             BorderColor="Crimson" 
                             BackgroundColor="Crimson" 
                             TextColor="#fefefe"/>
 
                 </Grid>
+
+
+
+
+                   
 
             </StackLayout>
         </ScrollView>

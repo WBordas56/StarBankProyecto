@@ -45,12 +45,12 @@ namespace StarBankProyecto.Views
 
         private async void PageDesarrolladores(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Views.Transferencias());
+            await Navigation.PushAsync(new Views.Desarrolladores());
         }
 
         private async void PageSalir(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Views.ControlPresupuestario());
+            await Navigation.PushAsync(new MainPage());
         }
     }
 }

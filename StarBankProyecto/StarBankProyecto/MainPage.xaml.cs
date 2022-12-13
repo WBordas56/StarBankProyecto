@@ -23,7 +23,7 @@ namespace StarBankProyecto
             }
             else
             {
-                await Navigation.PushAsync(new Views.Dash("CEO-G5"));
+                await Navigation.PushAsync(new Views.Dash("Jose Manuel"));
             }
 
 

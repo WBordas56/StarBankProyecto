@@ -36,14 +36,21 @@
                         </StackLayout>
 
 
-                        <Frame Margin="0,0,0,15" Padding="0,0,0,0" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" BackgroundColor="#FF8300" CornerRadius="500" WidthRequest="500" HeightRequest="50">
-                            <Label TextColor="White" Text="Ingresar" FontSize="16" FontFamily="{StaticResource PoppinsRegular}" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"> 
-                                <Label.GestureRecognizers>
-                                    <TapGestureRecognizer Tapped="Ingresar"/>
-                                </Label.GestureRecognizers>
-                            </Label>
-                        </Frame>
-                        
+                        <Button Margin="0,0,0,15" 
+                                Padding="0,0,0,0" 
+                                VerticalOptions="CenterAndExpand" 
+                                HorizontalOptions="CenterAndExpand" 
+                                BackgroundColor="#FF8300" 
+                                CornerRadius="500" 
+                                WidthRequest="500" 
+                                HeightRequest="50"
+                                TextColor="White" 
+                                Text="Ingresar" 
+                                FontSize="16" 
+                                FontFamily="{StaticResource PoppinsBold}"
+                                TextTransform="None"
+                                Clicked="Ingresar"/>
+
                     </StackLayout>
                 </Frame>
             </StackLayout>

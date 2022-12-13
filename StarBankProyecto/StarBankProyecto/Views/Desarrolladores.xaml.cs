@@ -9,12 +9,12 @@ using Xamarin.Forms.Xaml;
 
 namespace StarBankProyecto.Views
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Desarrolladores : ContentPage
-    {
-        public Desarrolladores()
-        {
-            InitializeComponent();
-        }
-    }
+	[XamlCompilation(XamlCompilationOptions.Compile)]
+	public partial class Desarrolladores : ContentPage
+	{
+		public Desarrolladores ()
+		{
+			InitializeComponent ();
+		}
+	}
 }

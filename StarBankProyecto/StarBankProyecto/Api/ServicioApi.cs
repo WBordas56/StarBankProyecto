@@ -10,8 +10,8 @@ namespace ProyectoFinal.Api
 {
     public class ServicioApi
     {
-        private static readonly string URL_SITIOS = "https://pm2examen2.000webhostapp.com/apiproyecto/";
-        
+        private static readonly string URL_SITIOS = "https://movil2grupo5.000webhostapp.com/apiproyectomovil/";
+
         private static HttpClient client = new HttpClient();
 
         public static async Task<List<Servicio>> GetAllServicios()

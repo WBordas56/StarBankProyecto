@@ -10,7 +10,7 @@ namespace ProyectoFinal.Api
 {
     public class CuentaApi
     {
-        private static readonly string URL_SITIOS = "https://dpstudent.000webhostapp.com/starbank/";
+        private static readonly string URL_SITIOS = "https://movil2grupo5.000webhostapp.com/apiproyectomovil/";
 
         private static HttpClient client = new HttpClient();
 

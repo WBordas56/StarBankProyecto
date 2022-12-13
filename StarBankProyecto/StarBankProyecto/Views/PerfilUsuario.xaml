@@ -4,7 +4,7 @@
              x:Class="StarBankProyecto.Views.PerfilUsuario">
     <StackLayout>
 
-        <StackLayout BackgroundColor="#F3F5F9" Orientation="Horizontal" Padding="10" HorizontalOptions="Fill">
+        <StackLayout Orientation="Horizontal" Padding="10" HorizontalOptions="Fill">
             <!-- Volver<Image/>-->
             <Label TextColor="#FFFFFF" Text="PERFIL" FontSize="20" FontAttributes="Bold"/>
 
